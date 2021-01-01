@@ -1,0 +1,10 @@
+package com.SpringDemo;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
+
+@Component
+@ComponentScan("com.SpringDemo")
+public class IocConfig {
+
+}

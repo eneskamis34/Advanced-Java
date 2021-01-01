@@ -1,0 +1,16 @@
+package com.SpringDemo;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
+
+@Component
+@ComponentScan("com.SpringDemo")
+public class IocConfig {
+	
+	//sayfalarýn üzerine tek tek @Component("database") bunu yazmak yerine:
+	public ICustomerDal database()
+	{
+		return new MssqlCustomerDal();
+	}
+
+}

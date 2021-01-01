@@ -1,0 +1,10 @@
+package SpringDemo;
+
+public class MysqlCustomerDal implements ICustomerDal{
+	
+	@Override
+	public void Add() {
+		System.out.println("Mysql Veri Tabanýna Eklendi.");
+	}
+	
+}

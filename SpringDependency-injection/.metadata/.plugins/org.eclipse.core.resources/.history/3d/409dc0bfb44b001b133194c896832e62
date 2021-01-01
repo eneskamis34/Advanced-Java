@@ -1,0 +1,17 @@
+package SpringDemo;
+
+public class CustomerManager implements ICustomerService
+{
+	private ICustomerDal customer;
+	
+	public CustomerManager(ICustomerDal customer)
+	{
+		this.customer = customer;
+	}
+	
+	public void Add()
+	{
+		customer.Add();
+	}
+
+}
